@@ -1,0 +1,1 @@
+$(document).click(function(){body.css("background","green")});
