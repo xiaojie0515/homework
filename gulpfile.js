@@ -54,13 +54,13 @@ gulp.task('stylus', function(){
 
 
 gulp.task('minifycss',["stylus"], function(){
-	return gulp.src('./public/**/*.css')
+	return gulp.src('./public/css/**/*.css')
 		.pipe(minifycss())
 		.pipe(gulp.dest("./public/mincss"))
 })
 
 gulp.task('uglify', function(){
-	return gulp.src('./public/**/*.js')
+	return gulp.src('./public/js/**/*.js')
 		.pipe(uglify())
 		.pipe(gulp.dest('./public/minijs'))
 })
@@ -69,7 +69,8 @@ gulp.task('watcher',['browserSync','stylus','uglify'], function(){
 	gulp.watch('./stylus/**/*.styl', ['stylus'])
 	gulp.watch('./public/js/**/*.js', ['uglify'])
 	
-	gulp.watch(["./public/css/**/*.css", "./public/minjs/**/*.js"]).on('change', function(){
+	gulp.watch(["./public/css/**/*.css", "./public/mincss/**/*.css",
+			'./public/minjs/**/*.js']).on('change', function(){
 		reload();
 	})
 })
