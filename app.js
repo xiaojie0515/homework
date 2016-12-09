@@ -9,6 +9,23 @@ var app = express();
 console.log(__dirname);
 console.log(__filename)
 
+//定义通过 /api 访问的请求， 转发到指定路径
+app.use('/api', proxy({
+	target; 'http://122.10.30.153:9901',
+	pathRewrite: {
+		'^/api': '/'
+	}
+}));
+
+// http://127.0.0.1:9888/api/index
+// 替换为 http://122.10.30.153:9901/index
+
+console.log(__dirname);
+console.log(__filename);
+
+var viewsPath = path.join(__dirname, 'views');
+console.log(viewsPath);
+
 //拼接物理路径，用来指定虚拟路径的访问，(静态页面文件)
 var viewsPath = path.join(__dirname, 'views');
 console.log(viewsPath);

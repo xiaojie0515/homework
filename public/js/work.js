@@ -56,5 +56,32 @@ var dom = document.getElementsByClassName('md')[0];
 			fontSize -= 2;
 			document.getElementsByClassName('md')[0].style.fontSize = fontSize + 'px';
 		}
-		clearInterval(timeout)
+		clearInterval(timeout);
+		console.log(times);
+		if(times >= 1000){
+			console.log('tap')
+		}
+	})
+	
+	var  xhr = new XMLHttpRequest();
+	
+	xhr.open('get', 'http://122.10.30.153:9901/index')
+	xhr.send();
+	xhr.onreadystatechange = function(){
+		
+		if(xhr.state === 200 || xhr.readyState === 4){
+			console.log('success', JSON.parse(xhr.response))
+		}
+	}
+	
+	$.ajax({
+		url: "http://122.10.30.153:9901/index",
+		type: 'get',
+		dataType: 'json',
+		success: function(result){
+			console.log('result', result)
+		},
+		complete: function(res){
+			console.log('res', res)
+		}
 	})
