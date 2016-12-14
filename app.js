@@ -2,7 +2,7 @@
 var path = require('path')
 //引入 express 依赖模块，用来启动静态服务器
 var express = require('express');
-
+var proxy = require('http-proxy-middleware');
 //实例 express
 var app = express();
 
@@ -11,7 +11,7 @@ console.log(__filename)
 
 //定义通过 /api 访问的请求， 转发到指定路径
 app.use('/api', proxy({
-	target; 'http://122.10.30.153:9901',
+	target: 'http://122.10.30.153:9901',
 	pathRewrite: {
 		'^/api': '/'
 	}

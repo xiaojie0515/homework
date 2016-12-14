@@ -1,0 +1,113 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #efeff4;
+}
+.heads {
+  position: relative;
+  background: #fff;
+  height: 65px;
+  border-bottom: 1px solid #e5e5ea;
+}
+.heads:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  margin-top: -15px;
+  width: 20px;
+  height: 30px;
+  display: block;
+  background: url("../../../public/img/room-img/return.png") no-repeat left center;
+  background-size: 50%;
+}
+.heads span {
+  position: absolute;
+  left: 50%;
+  margin-left: -22px;
+  top: 50%;
+  margin-top: -12px;
+  font-size: 22px;
+  color: #ed6c2b;
+  font-family: "SimHei";
+}
+.userps {
+  overflow: hidden;
+  height: 90px;
+  background: #fff;
+  margin-top: 30px;
+  border-bottom: 1px solid #e5e5ea;
+  border-top: 1px solid #e5e5ea;
+}
+.userps .userid {
+  width: 20px;
+  height: 30px;
+  margin-top: 8px;
+  margin-left: 5%;
+  float: left;
+  background: url("../../../public/img/room-img/id.png") no-repeat center;
+  background-size: 100%;
+}
+.userps .userpassword {
+  width: 20px;
+  height: 30px;
+  margin-top: 8px;
+  margin-left: 5%;
+  float: left;
+  background: url("../../../public/img/room-img/password.png") no-repeat center;
+  background-size: 85%;
+}
+.userps input {
+  margin-left: 5px;
+  height: 45px;
+  border: 0px;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+}
+.userps-txt {
+  height: 45px;
+  margin-left: 5%;
+  float: left;
+  line-height: 45px;
+  font-family: "SimHei";
+  font-size: 16px;
+}
+.footer {
+  width: 90%;
+  margin-left: 5%;
+}
+.login {
+  width: 100%;
+  line-height: 55px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  color: #fff;
+  font-size: 22px;
+  height: 55px;
+  background: #c7c7c7;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+.footer-nav {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.rester {
+  float: left;
+  color: #eb5c11;
+  font-size: 18px;
+  font-family: "SimHei";
+}
+.forget {
+  float: right;
+  color: #696969;
+  font-size: 18px;
+  font-family: "SimHei";
+}
+.border-bottom {
+  border-bottom: 1px solid #ebebeb;
+  margin-left: 5%;
+  width: 90%;
+}

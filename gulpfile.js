@@ -69,8 +69,9 @@ gulp.task('watcher',['browserSync','stylus','uglify'], function(){
 	gulp.watch('./stylus/**/*.styl', ['stylus'])
 	gulp.watch('./public/js/**/*.js', ['uglify'])
 	
-	gulp.watch(["./public/css/**/*.css", "./public/mincss/**/*.css",
-			'./public/minjs/**/*.js']).on('change', function(){
+	gulp.watch(["./public/css/**/*.css",
+				'./public/minjs/**/*.js'])
+				.on('change', function(){
 		reload();
 	})
 })

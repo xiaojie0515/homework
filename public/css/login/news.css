@@ -1,0 +1,150 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #efeff4;
+}
+.heads {
+  z-index: 1;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #e3e3e8;
+}
+.heads .box {
+  list-style: none;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  height: 25px;
+  border: 1px solid #ea5404;
+  border-radius: 6px;
+  margin-top: 25px;
+}
+.heads .box .news {
+  flex: 1;
+  font-size: 14px;
+  border-right: 1px solid #ea5404;
+  color: #ea5404;
+  text-align: center;
+  line-height: 25px;
+}
+.heads .box .active {
+  background: #ea5404;
+  color: #fff;
+}
+.heads .box .demand {
+  border: 0px;
+}
+.otext {
+  padding: 0px 15px 0px 15px;
+  margin-top: 80px;
+}
+.otext .obox {
+  padding: 10px 10px 10px 10px;
+  position: relative;
+  height: 110px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ebebee;
+  box-shadow: -1px 1px 1px 2px #ebebee;
+  font-size: 12px;
+  font-family: "SimHei";
+}
+.otext .obox .box-txt1 {
+  font-size: 14px;
+  color: #323232;
+  font-family: "SimHei";
+}
+.otext .obox .border {
+  border-bottom: 1px solid #ebebee;
+  margin-top: 10px;
+}
+.otext .obox .box-txt2 {
+  text-indent: 2em;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #7b7b7b;
+  font-family: "SimHei";
+text-indent
+}
+.otext .obox .riqi {
+  position: absolute;
+  right: 10px;
+  top: 70%;
+  color: #9f9f9f;
+}
+.zuhu {
+  width: 60px;
+  height: 20px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  line-height: 20px;
+  background: #15b755;
+  text-align: center;
+  float: right;
+}
+.jjr {
+  background-color: #0193e6;
+}
+.zaos {
+  background-color: #97b715;
+}
+.daili {
+  background-color: #ea5404;
+}
+.riqi2 {
+  float: right;
+  color: #9f9f9f;
+  font-size: 12px;
+  font-family: "SimHei";
+}
+.dizhi {
+  color: #727272;
+  font-size: 12px;
+  line-height: 50px;
+}
+.box-txt3 {
+  margin: 10px auto;
+  width: 90px;
+  font-family: "SimHei";
+  font-size: 14px;
+  height: 22px;
+  border-radius: 4px;
+  border: 1px solid #e8e8ea;
+  background: #efeff4;
+  color: #6a6a6b;
+  text-align: center;
+  line-height: 22px;
+}
+.bottom-fixed {
+  position: fixed;
+  height: 50px;
+  background: #fff;
+  bottom: 0px;
+  width: 100%;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+  color: #b5b5b5;
+  border-top: 1px solid #e2e2e3;
+}
+.bottom-fixed img {
+  width: 28px;
+  margin-top: 4px;
+}
+.bottom {
+  float: left;
+  margin-left: 36px;
+}
+.bottom-jia {
+  width: 50px;
+  height: 50px;
+  background: url("../../../public/img/room-img/jiajia.png") no-repeat center;
+  background-size: 100%;
+}

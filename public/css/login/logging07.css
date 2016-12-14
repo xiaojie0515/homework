@@ -1,0 +1,139 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #efeff4;
+}
+.heads {
+  position: relative;
+  background: #fff;
+  height: 65px;
+  border-bottom: 1px solid #e5e5ea;
+}
+.heads:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  margin-top: -15px;
+  width: 20px;
+  height: 30px;
+  display: block;
+  background: url("../../../public/img/room-img/return.png") no-repeat left center;
+  background-size: 50%;
+}
+.heads span {
+  position: absolute;
+  left: 50%;
+  margin-left: -22px;
+  top: 50%;
+  margin-top: -12px;
+  font-size: 22px;
+  color: #323232;
+  font-family: "SimHei";
+}
+.nav {
+  margin-top: 6px;
+  height: 40px;
+  display: flex;
+  background: #fff;
+}
+.shoucang {
+  flex: 1;
+  position: relative;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: #ea5404;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px solid #ea5404;
+}
+.shoucang span {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: #383838;
+}
+.shoucang:after {
+  content: '';
+  position: absolute;
+  right: 0%;
+  top: 10px;
+  height: 20px;
+  width: 1px;
+  background: #ccc;
+}
+.jifen {
+  flex: 1;
+  position: relative;
+  width: 49%;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  color: #808080;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+}
+.footer {
+  padding: 0px 15px 0px 15px;
+}
+.footer .box {
+  padding: 10px 10px 10px 10px;
+  height: 110px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ebebee;
+  box-shadow: -1px 1px 1px 2px #ebebee;
+}
+.footer .box .border {
+  border-bottom: 1px dashed #ebebee;
+  margin-top: 10px;
+}
+.footer .box .box-txt1 {
+  font-size: 16px;
+  color: #323232;
+  font-family: "SimHei";
+}
+.footer .box .box-txt1 span {
+  width: 60px;
+  height: 20px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  line-height: 20px;
+  background: #15b755;
+  text-align: center;
+  float: right;
+}
+.footer .box .box-txt1 .jjr {
+  background-color: #0193e6;
+}
+.footer .box .riqi {
+  color: #9f9f9f;
+  font-size: 12px;
+  font-family: "SimHei";
+  float: right;
+  margin-top: -30px;
+}
+.footer .box .box-txt2 {
+  text-indent: 2em;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #323232;
+  font-family: "SimHei";
+}
+.footer .box .box-txt3 {
+  margin: 10px auto;
+  width: 90px;
+  font-family: "SimHei";
+  font-size: 14px;
+  height: 22px;
+  border-radius: 4px;
+  border: 1px solid #e8e8ea;
+  background: #efeff4;
+  color: #6a6a6b;
+  text-align: center;
+  line-height: 22px;
+}
