@@ -1,0 +1,316 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #efeff4;
+}
+.heads {
+  background-color: transparent;
+  position: absolute;
+  top: 40px;
+  z-index: 5;
+  width: 100%;
+}
+.heads:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-left: 50px;
+  margin-top: -18px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url("../../../public/img/room-img/xia2.png") no-repeat left center;
+  background-size: 48%;
+}
+.place-name {
+  position: absolute;
+  margin-left: 15px;
+  top: 60%;
+  margin-top: -12px;
+  font-size: 16px;
+  color: #fff;
+  font-family: "SimHei";
+}
+.heads-title {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  top: 50%;
+  margin-top: -12px;
+  font-size: 20px;
+  color: #fff;
+  font-family: "SimHei";
+}
+.search-box {
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  left: 15px;
+  z-index: 5;
+}
+.search-box .search-input {
+  height: 30px;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 30px;
+  font-family: "SimHei";
+  color: #999;
+}
+.search-box .icon-search {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("../../../public/img/room-img/search.png") no-repeat center;
+  background-size: 16px;
+  vertical-align: bottom;
+}
+.search-box input {
+  border: 0;
+  background-color: #f1f1f1;
+  padding: 5px 0px 5px 5px;
+  font-family: "SimHei";
+}
+.banner {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+.banner .banner-box {
+  width: 400%;
+  transition: all 0.5s;
+  transform: translateX(0);
+}
+.banner .banner-box:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.banner-img {
+  float: left;
+  width: 25%;
+  height: 320px;
+  background: url("../../../public/img/room-img/banner1.png") no-repeat center;
+  background-size: 100%;
+}
+.banner-img:nth-child(2) {
+  background: url("../../../public/img/room-img/banner2.png") no-repeat center;
+}
+.banner-img:nth-child(3) {
+  background: url("../../../public/img/room-img/banner3.png") no-repeat center;
+}
+.banner-img:nth-child(4) {
+  background: url("../../../public/img/room-img/banner4.png") no-repeat center;
+}
+.point-box {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  margin-left: -24px;
+  z-index: 5;
+  height: 16px;
+  text-align: center;
+}
+.point-box .point-block {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../../../public/img/room-img/dian1.png") no-repeat center;
+  background-size: 10px;
+}
+.point-box .point-block.active {
+  background: url("../../../public/img/room-img/dian2.png") no-repeat center;
+  background-size: 10px;
+}
+.query-box {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebee;
+}
+.query-box .query-block {
+  flex: 1;
+}
+.active {
+  color: #ea5404;
+  background-color: #fff;
+}
+.text {
+  display: block;
+  height: 10px;
+  text-align: center;
+  line-height: 25px;
+  font-family: "SimHei";
+  font-size: 16px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  border-right: 1px solid #ebebee;
+}
+.icon {
+  display: block;
+  height: 12px;
+  width: 20px;
+  margin-left: 30px;
+  margin-top: -8px;
+  background: url("../../../public/img/room-img/xia.png") no-repeat center;
+  background-size: 100%;
+}
+.query-price {
+  width: 50px;
+  height: 50px;
+  background: url("../../../public/img/room-img/mony.png") no-repeat center;
+  background-size: 30px;
+}
+.query-price.active-down {
+  background: url("../../../public/img/room-img/mony01.png") no-repeat center;
+  background-size: 30px;
+}
+.query-price.active-up {
+  background: url("../../../public/img/room-img/mony02.png") no-repeat center;
+  background-size: 30px;
+}
+article {
+  margin-top: -28px;
+}
+.block-box {
+  display: flex;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+.img-box {
+  flex: 3;
+  background: url("../../../public/img/room-img/banner5.png") no-repeat center;
+  background-size: 100%;
+}
+.info-box {
+  flex: 5;
+  margin-left: 20px;
+}
+.info-title {
+  font-family: "SimHei";
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.info-address {
+  font-family: "SimHei";
+  font-size: 14px;
+  color: #7e7e7e;
+  padding-bottom: 5px;
+}
+.info-tag-box {
+  width: 60px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #eb6021;
+  margin-left: 10px;
+}
+.info-tag-box span {
+  text-align: center;
+  color: #eb6021;
+  font-size: 12px;
+  display: block;
+  line-height: 16px;
+}
+.info-price {
+  margin-top: 5px;
+}
+.info-price span {
+  display: block;
+  float: left;
+  color: #eb6021;
+  font-size: 1em;
+  font-family: arial;
+}
+.info-price span:nth-child(2) {
+  color: #7e7e7e;
+  float: left;
+  margin-left: 10px;
+  font-size: 0.6em;
+  line-height: 16px;
+}
+.info-price span:nth-child(3) {
+  color: #7e7e7e;
+  float: left;
+  padding-left: 30px;
+  font-size: 0.6em;
+  line-height: 16px;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #efeff4;
+}
+.heads02 {
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  z-index: 6;
+  height: 55px;
+  width: 100%;
+  background: #000;
+  vertical-align: bottom;
+}
+.heads02:after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url("../../../public/img/room-img/xia2.png") no-repeat center;
+  background-size: 50%;
+}
+.place-name02 {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Terminal";
+  display: block;
+  margin-top: 18px;
+  margin-left: 16px;
+}
+.heades-box02 {
+  width: 80px;
+  height: 30px;
+  top: 15px;
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+}
+.heades-box02:before {
+  content: '';
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url("../../../public/img/room-img/search.png") no-repeat center;
+  background-size: 80%;
+}
+.heades-box02 .heades-input02 {
+  border-radius: 4px;
+  padding: 5px;
+  padding-right: 40px;
+  width: 150px;
+  border: 0px;
+  text-align: center;
+}
+.icon02 {
+  display: block;
+  height: 10px;
+  width: 16px;
+  margin-left: 30px;
+  margin-top: -8px;
+  background: url("../../../public/img/room-img/xia3.png") no-repeat center;
+  background-size: 0.7em;
+}
