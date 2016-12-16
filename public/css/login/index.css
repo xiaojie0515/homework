@@ -31,7 +31,7 @@ body {
   margin-top: -12px;
   font-size: 16px;
   color: #fff;
-  font-family: "SimHei";
+  font-family: "Microsoft YaHei";
 }
 .heads-title {
   position: absolute;
@@ -41,7 +41,7 @@ body {
   margin-top: -12px;
   font-size: 20px;
   color: #fff;
-  font-family: "SimHei";
+  font-family: "Microsoft YaHei";
 }
 .search-box {
   position: absolute;
@@ -56,7 +56,7 @@ body {
   background-color: #f1f1f1;
   text-align: center;
   line-height: 30px;
-  font-family: "SimHei";
+  font-family: "Microsoft YaHei";
   color: #999;
 }
 .search-box .icon-search {
@@ -71,7 +71,7 @@ body {
   border: 0;
   background-color: #f1f1f1;
   padding: 5px 0px 5px 5px;
-  font-family: "SimHei";
+  font-family: "Microsoft YaHei";
 }
 .banner {
   width: 100%;
@@ -137,18 +137,12 @@ body {
 .query-box .query-block {
   flex: 1;
 }
-.active {
-  color: #ea5404;
-  background-color: #fff;
-}
 .text {
   display: block;
-  height: 10px;
   text-align: center;
-  line-height: 25px;
-  font-family: "SimHei";
+  height: 30px;
+  font-family: "Microsoft YaHei";
   font-size: 16px;
-  padding-bottom: 20px;
   margin-top: 10px;
   border-right: 1px solid #ebebee;
 }
@@ -160,6 +154,13 @@ body {
   margin-top: -8px;
   background: url("../../../public/img/room-img/xia.png") no-repeat center;
   background-size: 100%;
+}
+.active {
+  color: #ea5404;
+}
+.active .icon {
+  background: url("../../../public/img/room-img/xia3.png") no-repeat center;
+  background-size: 0.7em;
 }
 .query-price {
   width: 50px;
@@ -176,15 +177,26 @@ body {
   background-size: 30px;
 }
 article {
-  margin-top: -28px;
+  margin-top: -10px;
 }
 .block-box {
+  position: relative;
   display: flex;
   padding: 15px;
   margin-top: 10px;
   background-color: #fff;
 }
-.img-box {
+.block-box .aixin {
+  position: absolute;
+  top: 15%;
+  right: 6%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url("../../../public/img/room-img/aixin1.png") no-repeat center;
+  background-size: 90%;
+}
+.block-box .img-box {
   flex: 3;
   background: url("../../../public/img/room-img/banner5.png") no-repeat center;
   background-size: 100%;
@@ -194,15 +206,18 @@ article {
   margin-left: 20px;
 }
 .info-title {
-  font-family: "SimHei";
+  font-family: "Microsoft YaHei";
   font-size: 16px;
   padding-bottom: 5px;
 }
 .info-address {
-  font-family: "SimHei";
+  font-family: "Microsoft YaHei";
   font-size: 14px;
   color: #7e7e7e;
   padding-bottom: 5px;
+}
+.down-box {
+  display: none;
 }
 .info-tag-box {
   width: 60px;
@@ -242,13 +257,6 @@ article {
   font-size: 0.6em;
   line-height: 16px;
 }
-* {
-  padding: 0px;
-  margin: 0px;
-}
-body {
-  background: #efeff4;
-}
 .heads02 {
   background-color: transparent;
   position: fixed;
@@ -273,7 +281,7 @@ body {
 .place-name02 {
   font-size: 16px;
   color: #fff;
-  font-family: "Terminal";
+  font-family: "Microsoft YaHei";
   display: block;
   margin-top: 18px;
   margin-left: 16px;
@@ -305,12 +313,253 @@ body {
   border: 0px;
   text-align: center;
 }
-.icon02 {
+.bottom-fixed {
+  position: fixed;
+  z-index: 6;
+  height: 50px;
+  background: #fff;
+  bottom: 0px;
+  width: 100%;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+  color: #b5b5b5;
+  border-top: 1px solid #e2e2e3;
+}
+.bottom-fixed img {
+  width: 28px;
+  margin-top: 4px;
+}
+.bottom {
+  float: left;
+  margin-left: 36px;
+}
+.bottom-jia {
+  width: 50px;
+  height: 50px;
+  background: url("../../../public/img/room-img/jiajia.png") no-repeat center;
+  background-size: 100%;
+}
+.tanchu02 {
+  position: absolute;
+  z-index: 4;
+  height: 50%;
+  top: 426px;
+  width: 100%;
+  background: #efeff4;
+}
+.tanchu02 .quyu {
+  line-height: 48px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+}
+.quyu2 {
+  line-height: 48px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  background: #fff;
+}
+.quyu-input {
+  margin-left: 70px;
+  margin-top: 10px;
+}
+.quyu-input input {
+  border: 1px solid #e9eaeb;
+  border-radius: 6px;
+  width: 70px;
+  height: 30px;
+  float: left;
+  margin: 0px 10px;
+}
+.quyu-input .border {
+  width: 25px;
+  height: 1px;
+  border-bottom: 1px solid #cfcfcf;
+  float: left;
+  margin-top: 15px;
+}
+.quyu-input .queding {
+  border: 1px solid #e9eaeb;
+  border-radius: 6px;
+  background: #fff;
+  width: 50px;
+  height: 30px;
+  float: left;
+  margin-left: 15px;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Microsoft YaHei";
+  font-size: 0.9em;
+}
+.tanchu03 {
+  position: absolute;
+  z-index: 4;
+  height: 385px;
+  top: 426px;
+  width: 100%;
+  background: #efeff4;
+}
+.danjia {
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+}
+.danjia02 {
+  line-height: 40px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  background: #fff;
+}
+.yincang {
+  display: none;
+}
+.touming {
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  top: 70%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.tanchu04 {
+  position: absolute;
+  display: flex;
+  z-index: 4;
+  height: 385px;
+  top: 426px;
+  width: 100%;
+  background: #efeff4;
+  overflow: hidden;
+}
+.tanchu04 .tan-right {
+  flex: 1;
+}
+.tanchu04 .tan-left {
+  flex: 1;
+  line-height: 30px;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+}
+.tanchu04 .tan-left .ditie {
+  padding: 5px 0px 5px 10px;
+}
+.tanchu04 .tan-left .ditie-atv {
+  background: #fff;
+}
+.tanchu04 .tan-right .gengduo {
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  line-height: 30px;
+  display: none;
+  background: #fff;
+}
+.tanchu04 .tan-right .gengduo .luxian {
+  border-bottom: 1px solid #eee;
+  margin-left: 10px;
+  padding: 5px 0px 5px 0px;
+}
+.tanchu04 .tan-right .gengduo .quanbu {
+  color: #ea5404;
+  margin-left: 10px;
+  padding: 5px 0px 5px 0px;
+  border-bottom: 1px solid #eee;
+}
+.touming02 {
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  top: 70%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.search-bg {
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 0px;
+  bottom: 0px;
+  z-index: 7;
+  width: 100%;
+}
+.search-bg:after {
+  content: '';
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  width: 20px;
+  height: 20px;
   display: block;
-  height: 10px;
-  width: 16px;
-  margin-left: 30px;
-  margin-top: -8px;
-  background: url("../../../public/img/room-img/xia3.png") no-repeat center;
-  background-size: 0.7em;
+  background: url("../../../public/img/room-img/search.png") no-repeat center;
+  background-size: 80%;
+}
+.search-head {
+  width: 100%;
+}
+.search-head .search-box02 {
+  border-radius: 6px;
+  width: 80%;
+  height: 50px;
+}
+.search-head .search-box02 .search-input02 {
+  background: #f1f1f1;
+  color: #bfbfbf;
+  border-radius: 6px;
+  padding: 5px;
+  padding: 10px 60px 10px 0px;
+  width: 75%;
+  font-family: "SimHei";
+  border: 0px;
+  margin: 10px 0px 0px 10px;
+  text-align: center;
+}
+.search-head .search-box02 span {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  font-family: "SimHei";
+  color: #ea5404;
+}
+.search-txt {
+  height: 40px;
+  margin-top: 10px;
+  width: 100%;
+  background: #efeff4;
+}
+.search-txt .search-txt1 {
+  font-size: 16px;
+  font-family: "SimHei";
+  color: #868687;
+  line-height: 40px;
+  padding-left: 20px;
+  float: left;
+}
+.search-txt .search-txt2 {
+  font-size: 14px;
+  font-family: "SimHei";
+  color: #868687;
+  line-height: 40px;
+  padding-right: 20px;
+  float: right;
+}
+.search-footer {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.search-footer .search-footer1 {
+  font-size: 18px;
+  font-family: "SimHei";
+  color: #505050;
+  border-bottom: 1px solid #ebebeb;
+  line-height: 30px;
+}
+.aixin2 {
+  position: absolute;
+  top: 15%;
+  right: 6%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url("../../../public/img/room-img/aixin2.png") no-repeat center;
+  background-size: 90%;
 }

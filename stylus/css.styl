@@ -2,64 +2,79 @@
   padding: 0px
   margin: 0px
 
-body
-  background: #EFEFF4
 
-.heads02
-	background-color transparent
-	position fixed
+
+.search-bg
+	position abslute
+	background #fff
 	top 0px
-	z-index 6
-	height 55px
+	bottom 0px
+	z-index 7
 	width 100%
-	background black
-	vertical-align bottom
-	
 	&:after
 		content ''
 		position absolute
-		top 30%
-		left 13%
+		top 3%
+		left 7%
 		width 20px
 		height 20px
 		display block
-		background  url("../../../public/img/room-img/xia2.png") no-repeat center
-		background-size 50%
+		background  url("../../../public/img/room-img/search.png") no-repeat center
+		background-size 80%
 
-.place-name02
-  font-size: 16px
-  color #fff
-  font-family "Terminal"
-  display block
-  margin-top 18px
-  margin-left 16px
 
-.heades-box02
-	width 80px
-	height 30px
-	top 15px
-	position absolute
-	left 50%
-	margin-left -80px
-	&:before
-			content ''
+.search-head
+	width 100%
+	
+	.search-box02
+		border-radius 6px
+		width 80%
+		height 50px
+		
+		.search-input02
+			background #F1F1F1
+			color #BFBFBF
+			border-radius 6px
+			padding 5px 
+			padding 10px 60px 10px 0px
+			width 75%
+			font-family "SimHei"
+			border 0px
+			margin 10px 0px 0px 10px
+			text-align center
+		span
 			position absolute
-			top 12%
-			left 5%
-			width 20px
-			height 20px
-			display block
-			background  url("../../../public/img/room-img/search.png") no-repeat center
-			background-size 80%
+			right 5%
+			top 3%
+			font-family "SimHei"
+			color #EA5404
+.search-txt
+	height 40px
+	margin-top 10px
+	width 100%
+	background #EFEFF4
 	
-	.heades-input02
-		border-radius 4px
-		padding 5px 
-		padding-right 40px
-		width 150px
-		border 0px
-		text-align center
-		
-		
-		
+	.search-txt1
+		font-size 16px
+		font-family "SimHei"
+		color #868687
+		line-height 40px
+		padding-left 20px
+		float left	
 	
+	.search-txt2
+		font-size 14px
+		font-family "SimHei"
+		color #868687
+		line-height 40px
+		padding-right 20px
+		float right	
+.search-footer
+	margin-top 10px
+	margin-left 15px
+	.search-footer1
+		font-size 18px
+		font-family "SimHei"
+		color #505050
+		border-bottom 1px solid  #EBEBEB
+		line-height 30px						

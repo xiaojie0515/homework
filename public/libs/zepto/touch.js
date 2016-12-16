@@ -32,7 +32,7 @@
         if (swipeTimeout) clearTimeout(swipeTimeout)
         if (longTapTimeout) clearTimeout(longTapTimeout)
         touchTimeout = tapTimeout = swipeTimeout = longTapTimeout = null
-        // touch = {}
+           touch = {}
     }
 
     function isPrimaryTouch(event){
