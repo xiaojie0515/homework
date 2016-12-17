@@ -1,0 +1,211 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #efeff4;
+}
+.heads {
+  position: relative;
+  background: #fff;
+  height: 65px;
+  border-bottom: 1px solid #e5e5ea;
+}
+.heads:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  margin-top: -15px;
+  width: 20px;
+  height: 30px;
+  display: block;
+  background: url("../../../public/img/room-img/return.png") no-repeat left center;
+  background-size: 50%;
+}
+.heads span {
+  position: absolute;
+  left: 50%;
+  margin-left: -44px;
+  top: 50%;
+  margin-top: -12px;
+  font-size: 22px;
+  color: #323232;
+  font-family: "SimHei";
+}
+.ybg-txt {
+  font-family: "SimHei";
+  font-size: 16px;
+  padding: 6px;
+  color: #b4b4b4;
+}
+.y-box {
+  height: 60px;
+  padding: 4px 0px 4px 15px;
+  background: #fff;
+  border-bottom: 1px solid #e5e5ea;
+  position: relative;
+}
+.y-box .dianhua-img {
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  margin-top: -15px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url("../../../public/img/room-img/dianhua.png") no-repeat left center;
+  background-size: 100%;
+}
+.y-box .y-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-left: 5px;
+  background: url("../../../public/img/room-img/touxiang.png") no-repeat 0px 4px;
+  background-size: 90%;
+  float: left;
+}
+.y-box .y-name {
+  margin-left: 5px;
+  width: 80%;
+  border-right: 1px solid #e5e5ea;
+}
+.y-box .y-name .y-id {
+  font-family: "SimHei";
+  font-size: 18px;
+  margin-top: 10px;
+}
+.y-box .y-name .y-type {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #696969;
+}
+.y-box2 {
+  height: 70px;
+  padding: 4px 0px 4px 15px;
+  background: #fff;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e5ea;
+  font-family: "SimHei";
+}
+.y-box2 .y-txt01 {
+  margin-top: 5px;
+}
+.y-box2 .y-txt02 {
+  display: flex;
+  font-family: "SimHei";
+  font-size: 18px;
+  margin-top: 5px;
+}
+.y-box2 .y-txt02 .txt1 {
+  flex: 1;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #696969;
+}
+.y-box3 {
+  height: 40px;
+  padding: 4px 0px 4px 15px;
+  line-height: 40px;
+  background: #fff;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e5ea;
+  font-family: "SimHei";
+}
+.y-box4 {
+  padding: 4px 0px 0px 15px;
+  background: #fff;
+  font-size: 18px;
+  border-bottom: 1px solid #e5e5ea;
+  font-family: "SimHei";
+}
+.y-box4 .txt2 {
+  padding: 5px 0px 5px 0px;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.y-box4 .txt2 .yuyue01 {
+  float: left;
+}
+.y-box4 .txt2 .yuyue01 .riqi1 {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+.y-box4 .txt2 .yuyue01 .riqi2 {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+}
+.y-box4 .txt2 .yuyue02 {
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  float: right;
+  line-height: 40px;
+  padding: 0px 20px 0px 0px;
+}
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  background: #fff;
+  height: 60px;
+}
+.footer .bottom-txt {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #e5e6e9;
+  color: #eb590b;
+  line-height: 60px;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+}
+.footer .bottom-txt2 {
+  border-right: 0px;
+}
+.tan-bg {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  background: rgba(0,0,0,0.4);
+  display: none;
+}
+.tan-bg .tan-box {
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+  top: 50%;
+  margin-top: -60px;
+  width: 250px;
+  height: 120px;
+  border-radius: 16px;
+  background: #fff;
+}
+.tan-bg .tan-box .tan-top {
+  height: 70px;
+  border-bottom: 1px solid #ebebee;
+  line-height: 70px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+}
+.tan-bg .tan-box .tan-bottom {
+  display: flex;
+}
+.tan-bg .tan-box .tan-bottom .tan-txt {
+  height: 100%;
+  line-height: 48px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  flex: 1;
+  color: #7e7e7e;
+  border-right: 1px solid #ebebee;
+}
+.tan-bg .tan-box .tan-bottom .tan-txt2 {
+  border-right: 0px;
+  color: #ec6425;
+}
