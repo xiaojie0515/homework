@@ -1,3 +1,6 @@
+/**
+ * Created by Administrator on 2016/12/13.
+ */
 //     Zepto.js
 //     (c) 2010-2016 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
@@ -26,13 +29,16 @@
         longTapTimeout = null
     }
 
-    function cancelAll() {
-        if (touchTimeout) clearTimeout(touchTimeout)
-        if (tapTimeout) clearTimeout(tapTimeout)
-        if (swipeTimeout) clearTimeout(swipeTimeout)
-        if (longTapTimeout) clearTimeout(longTapTimeout)
-        touchTimeout = tapTimeout = swipeTimeout = longTapTimeout = null
-//         touch = {}
+    function cancelAll(_d) {
+      //  console.log(_d);
+        if(_d != 'touchcancel'){
+            if (touchTimeout) clearTimeout(touchTimeout)
+            if (tapTimeout) clearTimeout(tapTimeout)
+            if (swipeTimeout) clearTimeout(swipeTimeout)
+            if (longTapTimeout) clearTimeout(longTapTimeout)
+            touchTimeout = tapTimeout = swipeTimeout = longTapTimeout = null
+            touch = {}
+        }
     }
 
     function isPrimaryTouch(event){
@@ -154,7 +160,9 @@
             // when the browser window loses focus,
             // for example when a modal dialog is shown,
             // cancel all ongoing events
-            .on('touchcancel MSPointerCancel pointercancel', cancelAll)
+            .on('touchcancel MSPointerCancel pointercancel', function(){
+                cancelAll('touchcancel')
+            })
 
         // scrolling the window indicates intention of the user
         // to scroll, not tap or swipe, so cancel all ongoing events

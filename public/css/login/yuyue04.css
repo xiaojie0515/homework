@@ -1,0 +1,155 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #efeff4;
+}
+.heads {
+  position: relative;
+  background: #fff;
+  height: 65px;
+  border-bottom: 1px solid #e5e5ea;
+}
+.heads span {
+  position: absolute;
+  left: 50%;
+  margin-left: -22px;
+  top: 50%;
+  margin-top: -12px;
+  font-size: 22px;
+  color: #323232;
+  font-family: "SimHei";
+}
+.box {
+  width: 100%;
+  height: 112px;
+  position: relative;
+  margin-top: 10px;
+}
+.yuyue-box {
+  position: absolute;
+  z-index: 5;
+  padding: 12px 0px 20px 0px;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  transition: all 0.4s;
+}
+.yuyue-box.active {
+  margin-left: -80px;
+  transition: all 0.4s;
+}
+.yuyue-box .yuyue-img {
+  flex: 1;
+  width: 100px;
+  height: 80px;
+  background: url("../../../public/img/room-img/yuyueimg.png") no-repeat center;
+  background-size: 100%;
+  border-radius: 6px;
+}
+.yuyue-box .yuyue-txt {
+  flex: 2;
+}
+.yuyue-box .yuyue-txt .txt {
+  margin-left: 10px;
+  overflow: hidden;
+  width: 220px;
+}
+.yuyue-box .yuyue-txt .txt .name {
+  font-size: 14px;
+  font-family: "SimHei";
+  float: left;
+}
+.yuyue-box .yuyue-txt .txt .riqi {
+  font-size: 0.8em;
+  font-family: "SimHei";
+  text-align: right;
+  color: #c5c5c5;
+}
+.yuyue-box .yuyue-txt .txt2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  text-indent: 1em;
+  font-size: 14px;
+  font-family: "SimHei";
+  color: #383838;
+}
+.yuyue-box .yuyue-txt .txt3 {
+  margin-top: 5px;
+  text-indent: 1em;
+  font-size: 13px;
+  font-family: "SimHei";
+  color: #ff9f38;
+}
+.yuyue-box .jiedan {
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  background: #ea5404;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "SimHei";
+  color: #ff9f38;
+  right: 20px;
+  top: 80px;
+  color: #fff;
+  font-size: 14px;
+}
+.yuyue-box .jiedan2 {
+  position: absolute;
+  display: none;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 20px;
+  font-family: "SimHei";
+  right: 20px;
+  top: 80px;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.shanchu {
+  position: absolute;
+  height: 110px;
+  top: 1px;
+  right: 0px;
+  z-index: 1;
+  width: 80px;
+  background-color: #ff3b30;
+  line-height: 100px;
+  color: #fff;
+  text-align: center;
+  font-family: "SimHei";
+  font-size: 16px;
+}
+.bottom-fixed {
+  position: fixed;
+  z-index: 5;
+  height: 50px;
+  background: #fff;
+  bottom: 0px;
+  width: 100%;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+  color: #b5b5b5;
+  border-top: 1px solid #e2e2e3;
+}
+.bottom-fixed img {
+  width: 28px;
+  margin-top: 4px;
+}
+.bottom {
+  float: left;
+  margin-left: 36px;
+}
+.bottom-jia {
+  width: 50px;
+  height: 50px;
+  background: url("../../../public/img/room-img/jiajia.png") no-repeat center;
+  background-size: 100%;
+}
+.yuyues {
+  color: #ea5405;
+}
