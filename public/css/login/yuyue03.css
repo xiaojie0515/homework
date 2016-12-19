@@ -203,19 +203,12 @@ body {
   color: #7e7e7e;
   border-right: 1px solid #ebebee;
 }
-.tan-bg .tan-box .tan-bottom .tan-txt2 {
+.tan-bg .tan-box .tan-bottom .queding {
   border-right: 0px;
   color: #ec6425;
 }
-.tan-bg2 {
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  bottom: 0px;
-  background: rgba(0,0,0,0.4);
+.tan-bg .tan-box2 {
   display: none;
-}
-.tan-bg2 .tan-box2 {
   position: absolute;
   left: 50%;
   margin-left: -125px;
@@ -226,7 +219,7 @@ body {
   border-radius: 16px;
   background: #fff;
 }
-.tan-bg2 .tan-box2 .tan-top2 {
+.tan-bg .tan-box2 .tan-top2 {
   height: 70px;
   font-size: 14px;
   font-family: "Microsoft YaHei";
@@ -234,7 +227,7 @@ body {
   text-align: center;
   line-height: 60px;
 }
-.tan-bg2 .tan-box2 .tan-bottom2 {
+.tan-bg .tan-box2 .tan-bottom2 {
   line-height: 50px;
 text-center
   font-family: "Microsoft YaHei";
