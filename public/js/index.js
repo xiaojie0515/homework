@@ -221,3 +221,13 @@ window.onload = function(){
 		})
 	}
 }
+
+$('.yuyue').on('tap',function () {
+	location.href = '../yuyue/yuyue04.html'
+})
+$('.xinxi').on('tap',function () {
+	location.href = '../information/news.html'
+})
+$('.me').on('tap', function () {
+	location.href = '../Mymessage/logging01.html'
+})

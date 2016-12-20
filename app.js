@@ -39,9 +39,9 @@ var publicPath = path.join(__dirname, 'public');
 //指定访问静态资源文件的路径
 app.use('/public',express.static(publicPath));
 
-//监听端口 9999，  用来启动服务
-app.listen(9999, function(){
-	console.log('server run at port 9999')
+//监听端口 16903，  用来启动服务
+app.listen(16903, function(){
+	console.log('server run at port 16903')
 });
 
 //模块导出

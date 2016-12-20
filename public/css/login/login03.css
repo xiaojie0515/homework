@@ -11,9 +11,8 @@ body {
   height: 65px;
   border-bottom: 1px solid #e5e5ea;
 }
-.heads:after {
+.heads .after {
   content: '';
-  position: absolute;
   top: 50%;
   left: 5%;
   margin-top: -15px;
@@ -22,6 +21,9 @@ body {
   display: block;
   background: url("../../../public/img/room-img/return.png") no-repeat left center;
   background-size: 50%;
+}
+.heads .after position absolute {
+  z-index: 5;
 }
 .heads span {
   position: absolute;

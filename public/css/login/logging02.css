@@ -321,3 +321,6 @@ body {
   background: url("../../../public/img/room-img/jiajia.png") no-repeat center;
   background-size: 100%;
 }
+.me {
+  color: #ea5404;
+}

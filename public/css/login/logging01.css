@@ -11,10 +11,11 @@ body {
   height: 65px;
   border-bottom: 1px solid #e5e5ea;
 }
-.heads:after {
+.heads .shezhi {
   content: '';
   position: absolute;
   top: 50%;
+  z-index: 5;
   right: 5%;
   margin-top: -15px;
   width: 20px;
@@ -26,7 +27,7 @@ body {
 .heads span {
   position: absolute;
   left: 50%;
-  margin-left: -22px;
+  margin-left: -11px;
   top: 50%;
   margin-top: -12px;
   font-size: 22px;
@@ -337,4 +338,7 @@ body {
   height: 50px;
   background: url("../../../public/img/room-img/jiajia.png") no-repeat center;
   background-size: 100%;
+}
+.me {
+  color: #ea5404;
 }

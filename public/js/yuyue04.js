@@ -1,6 +1,11 @@
-$('.jiedan').on('tap', function(){
-	$('.jiedan').hide(),$('.jiedan2').show()
-})
+
+    $('.jiedan').on('tap', function(){
+        var $self = $(this)
+        var i = $self.index()
+        $self.hide()
+        $self.next().show()
+	 })
+
 $('.yuyue-box').on({
 	'swipeLeft':function(){
 		$(this).addClass('active');
@@ -12,4 +17,14 @@ $('.yuyue-box').on({
 
 $('.shanchu').on('tap', function(){
 	$(this).parent().hide()
+})
+
+$('.shouye').on('tap',function () {
+    location.href = '../index/index.html'
+})
+$('.xinxi').on('tap', function () {
+    location.href = '../information/news.html'
+})
+$('.me2').on('tap', function () {
+    location.href = '../Mymessage/logging01.html'
 })

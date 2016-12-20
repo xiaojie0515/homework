@@ -11,7 +11,7 @@ body {
   height: 65px;
   border-bottom: 1px solid #e5e5ea;
 }
-.heads:after {
+.heads .after {
   content: '';
   position: absolute;
   top: 50%;
@@ -79,6 +79,18 @@ body {
   margin-left: 5%;
 }
 .login {
+  width: 100%;
+  line-height: 55px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  color: #fff;
+  font-size: 22px;
+  height: 55px;
+  background: #c7c7c7;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+.login.active {
   width: 100%;
   line-height: 55px;
   text-align: center;

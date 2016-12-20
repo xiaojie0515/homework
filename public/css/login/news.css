@@ -132,6 +132,7 @@ text-indent
   font-family: "Microsoft YaHei";
   text-align: center;
   color: #b5b5b5;
+  line-height: 17px;
   border-top: 1px solid #e2e2e3;
 }
 .bottom-fixed img {
@@ -147,4 +148,7 @@ text-indent
   height: 50px;
   background: url("../../../public/img/room-img/jiajia.png") no-repeat center;
   background-size: 100%;
+}
+.xinxi {
+  color: #ea5404;
 }
