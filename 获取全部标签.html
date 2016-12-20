@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div></div>
+		<span></span>
+		<span></span>
+		<span></span>
+	</body>
+	<script>
+		var doms = document.getElementsByTagName('*')
+		console.log(doms)
+		
+		var domarr = Array.from(doms)
+		console.log("domarr", domarr)
+		
+		var s = document.querySelectorAll('*')
+		console.log(s);
+	
+		function  objarr(obj){
+			var arr = [];
+			var lg = obj.length;
+			for(var i=0;i<lg;i++){
+				arr.push(obj[i]);
+			}
+			return arr;
+		}
+		
+		
+		var domarr2 = objarr(doms)
+		console.log("domarr2", domarr2)
+		console.log("domarr2 slice", domarr2.slice())
+	
+		
+		function domByTagName(darr){
+			var tagarr = [];
+			var i,
+				lg = darr.length;
+				for(i=0; i<lg;i++){
+					tagarr.push(darr[i].tagName);
+				}
+				return tagarr;
+		}
+		
+		var tagnamearr = domByTagName(doms);
+		console.log("tagnamearr",tagnamearr)
+		console.log("tagnamearr slice",tagnamearr.slice())
+		
+		
+		//数组去重
+		function xarr(arr){
+			var i,
+				lg = arr.length;
+			var newarr = [arr[0]];
+			var j;
+			//循环遍历传入数组
+			for(i =0 ;i < lg; i++){
+				var offno = false;
+				var xlg = newarr.length
+				//循环遍历数组
+				for(j = 0;j < xlg; j++){
+					//新数组中的存在，改变offno
+					if(arr[i] === newarr[j]){
+						offno = true;
+					}
+				}
+				if(!offno){
+					newarr.push(arr[i]);
+				}
+			}
+			return newarr;
+		}
+		console.log("xarr",xarr(tagnamearr))
+		
+		
+		function xarr2(arr){
+			var i,
+				lg = arr.length;
+			var newarr = [];
+			for(i = 0;i < lg;i++){
+				if(newarr.indexOf(arr[i]) === -1){
+					newarr.push(arr[i]);
+				}
+			}
+			return newarr;
+		}
+		console.log("xarr2", xarr2(tagnamearr))
+		
+		//new Set([...document.querySelectorAll("*")].map(v =>v.tagName))
+		new Set(Array.from(document.querySelectorAll("*")).map(v =>v.tagName))
+		//console.log(new Set(Array.from(document.querySelectorAll("*")).map(v =>v.tagName)))
+	</script>
+</html>
