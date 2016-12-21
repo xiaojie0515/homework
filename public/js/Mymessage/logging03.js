@@ -7,3 +7,6 @@ $('.after').on('tap', function () {
 $('.footer').on('tap', function () {
     location.href = 'logging02.html'
 })
+$('.guanyu').on('tap', function () {
+    location.href = 'logging04.html'
+})

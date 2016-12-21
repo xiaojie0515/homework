@@ -81,13 +81,13 @@ body {
   font-family: "Microsoft YaHei";
   color: #808080;
 }
-.usertype:after {
+.usertype .xiugai {
   content: '';
   position: absolute;
-  right: -14px;
+  right: -16px;
   top: 50%;
   margin-top: -15px;
-  width: 20px;
+  width: 22px;
   height: 30px;
   display: block;
   background: url("../../../public/img/room-img/xiugai.png") no-repeat left center;
@@ -341,4 +341,57 @@ body {
 }
 .me {
   color: #ea5404;
+}
+.fb-bg {
+  display: none;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+}
+.fb-bg .push-left {
+  width: 80px;
+  height: 110px;
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+}
+.fb-bg .push-left .fbxq {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url("../../../public/img/room-img/fbxq.png") no-repeat center;
+  background-size: 120%;
+}
+.fb-bg .fb-txt {
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+}
+.fb-bg .push-right {
+  width: 80px;
+  height: 110px;
+  position: absolute;
+  bottom: 15%;
+  left: 60%;
+}
+.fb-bg .push-right .fbfy {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url("../../../public/img/room-img/fbfy.png") no-repeat center;
+  background-size: 120%;
+}
+.fb-bg .push-x {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 10px;
+  background: url("../../../public/img/room-img/fbx.png") no-repeat center;
+  background-size: 100%;
+  left: 50%;
+  margin-left: -10px;
 }

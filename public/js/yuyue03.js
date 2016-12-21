@@ -6,10 +6,13 @@ $('.gaiqi').on("tap", function(){
 $('.tan-qx').on('tap', function(){
 	$('.tan-bg').hide()
 });
-$('.tan-box .tan-bottom .queding').on('touchstart',function () {
+$('.queding').on('tap',function () {
     $('.tan-box').hide();
     $('.tan-box2').show();
 })
 $('.tan-bottom2').on('tap', function(){
-    $('.tan-bg').hide()
+    location.href= 'yuyue02.html';
+});
+$('.quxiao').on('tap', function(){
+    location.href= 'yuyue02.html';
 });

@@ -11,7 +11,7 @@ body {
   height: 65px;
   border-bottom: 1px solid #e5e5ea;
 }
-.heads:after {
+.heads .after {
   content: '';
   position: absolute;
   top: 50%;

@@ -20,11 +20,11 @@ $('.shanchu').on('tap', function(){
 })
 
 $('.shouye').on('tap',function () {
-    location.href = '../index/index.html'
+    location.href = '../index.html'
 })
 $('.xinxi').on('tap', function () {
     location.href = '../information/news.html'
 })
-$('.me2').on('tap', function () {
+$('.me').on('tap', function () {
     location.href = '../Mymessage/logging01.html'
 })

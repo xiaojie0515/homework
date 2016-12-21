@@ -8,7 +8,7 @@ $('.xinxi').on('tap', function () {
     location.href = '../information/news.html'
 })
 $('.shouye').on('tap', function () {
-    location.href = '../index/index.html'
+    location.href = '../index.html'
 })
 $('.yuyue').on('tap', function () {
     location.href = '../yuyue/yuyue04.html'

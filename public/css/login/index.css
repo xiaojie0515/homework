@@ -287,12 +287,12 @@ article {
   margin-left: 16px;
 }
 .heades-box02 {
-  width: 80px;
+  width: 200px;
   height: 30px;
   top: 15px;
   position: absolute;
   left: 50%;
-  margin-left: -80px;
+  margin-left: -100px;
 }
 .heades-box02:before {
   content: '';
@@ -307,11 +307,12 @@ article {
 }
 .heades-box02 .heades-input02 {
   border-radius: 4px;
-  padding: 5px;
+  padding: 6px;
   padding-right: 40px;
-  width: 150px;
   border: 0px;
   text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
 }
 .bottom-fixed {
   position: fixed;
