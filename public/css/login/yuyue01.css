@@ -11,7 +11,7 @@ body {
   height: 65px;
   border-bottom: 1px solid #e5e5ea;
 }
-.heads:after {
+.heads .after {
   content: '';
   position: absolute;
   top: 50%;
@@ -46,7 +46,7 @@ body {
   border-bottom: 1px solid #e5e5ea;
   position: relative;
 }
-.y-box:after {
+.y-box .dianhua-img {
   content: '';
   position: absolute;
   top: 55%;
@@ -127,4 +127,48 @@ body {
   background: #ea5404;
   border-radius: 8px;
   margin-top: 40px;
+}
+.tan-bg {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  background: rgba(0,0,0,0.4);
+  display: none;
+}
+.tan-bg .tan-box {
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+  top: 50%;
+  margin-top: -60px;
+  width: 250px;
+  height: 120px;
+  border-radius: 16px;
+  background: #fff;
+}
+.tan-bg .tan-box .tan-top {
+  height: 70px;
+  border-bottom: 1px solid #ebebee;
+  line-height: 70px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+}
+.tan-bg .tan-box .tan-bottom {
+  display: flex;
+}
+.tan-bg .tan-box .tan-bottom .tan-txt {
+  height: 100%;
+  line-height: 48px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+  flex: 1;
+  color: #7e7e7e;
+  border-right: 1px solid #ebebee;
+}
+.tan-bg .tan-box .tan-bottom .tan-txt2 {
+  border-right: 0px;
+  color: #ec6425;
 }

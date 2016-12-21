@@ -307,6 +307,7 @@ article
 	background #fff
 	bottom 0px
 	width 100%
+	display flex
 	font-size 12px
 	font-family "Microsoft YaHei"
 	text-align center
@@ -319,14 +320,13 @@ article
 	
 .bottom
 	float left
-	margin-left 36px
-
+	flex 1
 
 .bottom-jia
 	width 50px
 	height 50px
 	background url("../../../public/img/room-img/jiajia.png") no-repeat center
-	background-size 100%
+	background-size 60%
 
 
 .tanchu02
@@ -355,22 +355,22 @@ article
 	margin-left 70px
 	margin-top 10px
 	input
-		border 1px solid #E9EAEB 
+		border 1px solid #E9EAEB
 		border-radius 6px
 		width 70px
 		height 30px
 		float left
 		margin 0px 10px
-		
+
 	.border
 		width 25px
 		height 1px
 		border-bottom 1px solid #CFCFCF
 		float left
-		margin-top 15px 		 										
-	
+		margin-top 15px
+
 	.queding
-		border 1px solid #E9EAEB 
+		border 1px solid #E9EAEB
 		border-radius 6px
 		background #fff
 		width 50px
@@ -385,7 +385,7 @@ article
 .tanchu03
 	position absolute
 	z-index 4
-	height 385px
+	height 400px
 	top 426px
 	width 100%
 	background #EFEFF4
@@ -409,9 +409,10 @@ article
 	
 .touming
 	position absolute
+	display none
 	z-index 3
-	height 100%
-	top 70%
+	top 0px
+	bottom -500px
 	width 100%
 	background rgba(0,0,0,0.5)
 
@@ -456,14 +457,8 @@ article
 				margin-left 10px
 				padding 5px 0px 5px 0px
 				border-bottom 1px solid #EEEEEE			
-			
-.touming02
-	position absolute
-	z-index 3
-	height 100%
-	top 70%
-	width 100%
-	background rgba(0,0,0,0.5)
+
+
 
 .search-bg
 	display none
@@ -552,3 +547,50 @@ article
 	background-size 90%
 .shouye
 	color #EA5404
+.fb-bg
+	display none
+	z-index 5
+	position absolute
+	top 0px
+	bottom 0px
+	width: 100%
+	background rgba(0,0,0,0.9)
+	.push-left
+		width 80px
+		height 110px
+		position absolute
+		bottom  15%
+		left 20%
+		.fbxq
+			width 80px
+			height 80px
+			border-radius 50%
+			background url("../../../public/img/room-img/fbxq.png") no-repeat center
+			background-size 120%
+	.fb-txt
+		color #fff
+		text-align center
+		margin-top 5px
+		font-family "Microsoft YaHei"
+		font-size 16px
+	.push-right
+		width 80px
+		height 110px
+		position absolute
+		bottom  15%
+		left 60%
+		.fbfy
+			width 80px
+			height 80px
+			border-radius 50%
+			background url("../../../public/img/room-img/fbfy.png") no-repeat center
+			background-size 120%
+	.push-x
+		width 20px
+		height 20px
+		position absolute
+		bottom 10px
+		background url("../../../public/img/room-img/fbx.png") no-repeat center
+		background-size 100%
+		left: 50%
+		margin-left -10px

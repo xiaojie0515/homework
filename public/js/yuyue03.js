@@ -13,6 +13,9 @@ $('.queding').on('tap',function () {
 $('.tan-bottom2').on('tap', function(){
     location.href= 'yuyue02.html';
 });
-$('.quxiao').on('tap', function(){
+$('.ok').on('tap', function(){
     location.href= 'yuyue02.html';
+});
+$('.quxiao').on('tap', function(){
+    history.back()
 });

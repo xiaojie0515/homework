@@ -57,9 +57,7 @@ $(window).scroll(function(){
 		console.log(otop)
 		
 		if(otop >= 320 ){
-			$('.heads02').css({
-				display:'block'
-			})
+			$('.heads02').show()
 			$('.query-box').css({
 			  position: 'fixed',
 			  top: "45px",
@@ -68,10 +66,9 @@ $(window).scroll(function(){
 		}else{$('.query-box').css({
 			  position: 'inherit'
 			})
-		$('.heads02').css({
-				display:'none'
-			})
+		$('.heads02').hide()
 			$downBox.hide();
+            $('.touming').hide()
 		}
 	});
 
@@ -84,26 +81,27 @@ $(window).scroll(function(){
 		e.stopPropagation();
 		if(window.scrollY < 320){
 			window.scrollTo(0, 320);
-		}else{
-			window.scrollTo(0, 320);
 		}
 
 		var $self = $(this);
 	    var index = $self.index();
-	    console.log($self);
-	    
+	    console.log(index);
+
    		if($self.hasClass('active')){
 	    	$self.removeClass('active');
 	    	$downBox.hide();
+	    	$('.touming').hide()
 	    }else{
 	    	$queyrBlock.removeClass('active');
 	    	$self.addClass('active');
 	    	$downBox.hide().eq(index).show();
+            $('.touming').show()
 	    }
 	});
 
 $('.query-price').on('tap', function(){
     var $self = $(this);
+    console.log('price');
     if($self.hasClass('active-down')){
         console.log('up');
         $self.removeClass('active-down').addClass('active-up');
@@ -231,3 +229,13 @@ $('.xinxi').on('tap',function () {
 $('.me').on('tap', function () {
 	location.href = '../Mymessage/logging01.html'
 })
+
+    $('.bottom-jia').on('tap', function () {
+        $('.fb-bg').show()
+    })
+    $('.fbxq').on('tap', function () {
+        location.href = '../Release/Release01.html'
+    })
+    $('.push-x').on('tap', function () {
+        $('.fb-bg').hide()
+    })

@@ -9,7 +9,7 @@ $('.forget').on('tap', function () {
 })
 
 $('.after').on('tap', function () {
-    location.href = '../Mymessage/logging02.html'
+    history.back()
 })
 
 

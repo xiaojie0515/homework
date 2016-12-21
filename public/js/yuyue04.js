@@ -28,3 +28,16 @@ $('.xinxi').on('tap', function () {
 $('.me').on('tap', function () {
     location.href = '../Mymessage/logging01.html'
 })
+$('.yuyue-box').on('tap', function () {
+    location.href = 'yuyue01.html'
+})
+
+$('.bottom-jia').on('tap', function () {
+    $('.fb-bg').show()
+})
+$('.fbxq').on('tap', function () {
+    location.href = '../Release/Release01.html'
+})
+$('.push-x').on('tap', function () {
+    $('.fb-bg').hide()
+})

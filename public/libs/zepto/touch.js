@@ -108,8 +108,8 @@
 
                     swipeTimeout = setTimeout(function() {
                         if (touch.el){
-                            touch.el.trigger('swipe')
-                            touch.el.trigger('swipe' + (swipeDirection(touch.x1, touch.x2, touch.y1, touch.y2)))
+                            // touch.el.trigger('swipe')
+                            // touch.el.trigger('swipe' + (swipeDirection(touch.x1, touch.x2, touch.y1, touch.y2)))
                         }
                         touch = {}
                     }, 0)
@@ -128,7 +128,7 @@
                             var event = $.Event('tap')
                             event.cancelTouch = cancelAll
                             // [by paper] fix -> "TypeError: 'undefined' is not an object (evaluating 'touch.el.trigger'), when double tap
-                            if (touch.el) touch.el.trigger(event)
+                            // if (touch.el) touch.el.trigger(event)
 
                             // trigger double tap immediately
                             if (touch.isDoubleTap) {

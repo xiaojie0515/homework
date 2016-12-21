@@ -29,3 +29,13 @@ $('.shouye').on('tap', function () {
 $('.yuyue').on('tap', function () {
     location.href = '../yuyue/yuyue04.html'
 })
+
+$('.bottom-jia').on('tap', function () {
+    $('.fb-bg').show()
+})
+$('.fbxq').on('tap', function () {
+    location.href = '../Release/Release01.html'
+})
+$('.push-x').on('tap', function () {
+    $('.fb-bg').hide()
+})

@@ -54,13 +54,24 @@ body
 		background-size 60%
  	
 .me-img
+	position relative
 	width 68px
 	height 68px
 	margin-left 3%
 	border-radius 50%
-	background url("../../../public/img/room-img/me.png") no-repeat left center
+	background url("../../../public/img/room-img/touxiang.png") no-repeat left center
 	background-size 100%
 	float left
+	&:after
+		content ''
+		position absolute
+		top 30px
+		right  -8px
+		width 24px
+		height 24px
+		display block
+		background url("../../../public/img/room-img/king.png") no-repeat right center
+		background-size 100%
 
 .clear
 	clear both
@@ -317,6 +328,7 @@ body
 	height 50px
 	background #fff
 	bottom 0px
+	display flex
 	width 100%
 	font-size 12px
 	font-family "Microsoft YaHei"
@@ -331,7 +343,7 @@ body
 .bottom
 	
 	float left
-	margin-left 36px
+	flex 1
 
 
 .bottom-jia
@@ -340,7 +352,7 @@ body
 	width 50px
 	height 50px
 	background url("../../../public/img/room-img/jiajia.png") no-repeat center
-	background-size 100% 	
+	background-size 60%
 
 .me
 	color #EA5404
