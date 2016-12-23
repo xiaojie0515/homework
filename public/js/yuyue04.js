@@ -20,7 +20,7 @@ $('.shanchu').on('tap', function(){
 })
 
 $('.shouye').on('tap',function () {
-    location.href = '../index.html'
+    location.href = '../index/index.html'
 })
 $('.xinxi').on('tap', function () {
     location.href = '../information/news.html'

@@ -11,7 +11,7 @@ console.log(__filename)
 
 //定义通过 /api 访问的请求， 转发到指定路径
 app.use('/api', proxy({
-	target: 'http://122.10.30.153:9901',
+	target: 'http://guanjp.com:9805',
 	pathRewrite: {
 		'^/api': '/'
 	}
@@ -47,9 +47,16 @@ var sha1 = require('sha1');
 
 
 //获取微信 js-sdk 验证信息接口
+// app.get('/sdkconfig', function(req, res){
+//     console.log(req.query)
+//     var obj = sign(ticket, req.query.url);
+//
+//     obj.appID = appID;
+//
+//     res.send(obj).end()
+// })
 
-
-app.use('/wexin', function(req, res){
+/*app.use('/wexin', function(req, res){
     var obj = req.query;
     console.log("weixin", obj);
     var arr = ["wangjie", obj.timestamp, obj.nonce];
@@ -64,7 +71,7 @@ app.use('/wexin', function(req, res){
     }else{
         res.send("验证失败").end();
     }
-});
+});*/
 
 
 

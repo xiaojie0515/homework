@@ -24,7 +24,7 @@ $('.me').on('tap', function () {
     location.href = '../Mymessage/logging01.html'
 })
 $('.shouye').on('tap', function () {
-    location.href = '../index.html'
+    location.href = '../index/index.html'
 })
 $('.yuyue').on('tap', function () {
     location.href = '../yuyue/yuyue04.html'
