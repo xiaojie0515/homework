@@ -41,3 +41,6 @@ $('.fbxq').on('tap', function () {
 $('.push-x').on('tap', function () {
     $('.fb-bg').hide()
 })
+$('.fbfy').on('tap', function () {
+    location.href = '../Release/Release02.html'
+})

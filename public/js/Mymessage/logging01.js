@@ -32,3 +32,6 @@ $('.shoucang').on('tap', function () {
 $('.fbxq').on('tap', function () {
     location.href = '../Release/Release01.html'
 })
+$('.fbfy').on('tap', function () {
+    location.href = '../Release/Release02.html'
+})

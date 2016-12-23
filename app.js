@@ -39,6 +39,35 @@ var publicPath = path.join(__dirname, 'public');
 //指定访问静态资源文件的路径
 app.use('/public',express.static(publicPath));
 
+app.get('/login', function(req, res){
+    res.send('ha ha ha');
+});
+var sha1 = require('sha1');
+// var nodegrass = require('nodegrass');
+
+
+//获取微信 js-sdk 验证信息接口
+
+
+app.use('/wexin', function(req, res){
+    var obj = req.query;
+    console.log("weixin", obj);
+    var arr = ["wangjie", obj.timestamp, obj.nonce];
+    arr.sort();
+
+    var str = sha1(arr.join(""));
+    console.log('sha1   ', str);
+
+    console.log('signature', obj.signature === str)
+    if( obj.signature === str){
+        res.send(obj.echostr).end();
+    }else{
+        res.send("验证失败").end();
+    }
+});
+
+
+
 //监听端口 16903，  用来启动服务
 app.listen(16903, function(){
 	console.log('server run at port 16903')

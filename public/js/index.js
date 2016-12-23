@@ -236,6 +236,9 @@ $('.me').on('tap', function () {
     $('.fbxq').on('tap', function () {
         location.href = '../Release/Release01.html'
     })
+    $('.fbfy').on('tap', function () {
+        location.href = '../Release/Release02.html'
+    })
     $('.push-x').on('tap', function () {
         $('.fb-bg').hide()
     })
