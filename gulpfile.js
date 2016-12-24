@@ -32,7 +32,7 @@ gulp.task('uglify',function () {
 gulp.task('nodemon',function (nm) {
     var flag = false;
     return nodemon({
-        script:'./app.js'
+        script:'./server.js'
     }).on('start',function () {
         if(!flag){
             nm();
