@@ -74,19 +74,11 @@ body {
   background: url("../../../public/img/room-img/logo01.png") no-repeat right center;
   background-size: 100%;
 }
-.img02 {
-  position: absolute;
-  top: 27%;
-  left: 24%;
-  width: 100px;
-  height: 100px;
-  background: url("../../../public/img/room-img/logo02.png") no-repeat right center;
-  background-size: 75%;
-}
+
 #banben {
   position: absolute;
-  top: 33%;
-  left: 53%;
+  top: 32%;
+  left: 55%;
   width: 100px;
   height: 100px;
   font-size: 14px;
